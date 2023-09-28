@@ -1,6 +1,6 @@
 <article>
 	<figure>
-		<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<svg width="" height="" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path
 				fill-rule="evenodd"
 				clip-rule="evenodd"
@@ -20,19 +20,19 @@
 	article {
 		width: 20rem;
 		display: grid;
-		grid-template-columns: 4rem 1fr;
+		grid-template-columns: 2.5rem 1fr;
 		grid-template-rows: 1fr 1fr auto;
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
 		border: 2px solid #f0f0eb;
 		border-radius: var(--unit-small);
 		padding: var(--unit-small);
-		container-type: inline-size;
+        box-shadow: var(--shadow-default);
 	}
 
     article h2 {
         font-size: 1rem;
-        color: var(--color-)
+        color: var(--color-primary);
     }
 
 	figure {
@@ -43,15 +43,24 @@
 		gap: var(--unit-small);
 	}
 
+    svg {
+        width: 2rem;
+        height: 2rem;
+        aspect-ratio: 1/1;
+    }
+
 	time {
 		grid-area: 2 / 2 / 3 / 3;
         color: #AAAAAA;
 	}
 
 	blockquote {
+        font-family: 'Poppins';
+        font-style:italic ;
 		margin: 0;
 		grid-area: 3 / 2 / 3 / 3;
 		padding: 0;
+        padding-left: 0.5rem;
         position: relative;
 	}
 
@@ -60,7 +69,7 @@
         color: var(--color-blue);
         font-size: 2rem;
         top: -0.5rem;
-        left: -0.75rem;
+        left: -0.25rem;
         position: absolute;
     }
 

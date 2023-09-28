@@ -9,7 +9,12 @@
     --color-accent: #AAA;
     --color-blue: #0594C6;
 
+    /* Schaduwen  */
+    --shadow-default: 0px 1px 7px rgba(135, 135, 135, 0.1), 0px 4px 5px -2px rgba(135, 135, 135, 0.12), 0px 10px 15px -5px rgba(0, 0, 0, 0.2);
+
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -18,5 +23,6 @@
 }
 
 body {
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
+    padding: var(--unit-default);
 }
