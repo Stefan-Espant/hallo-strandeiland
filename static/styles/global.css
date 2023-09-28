@@ -1,0 +1,22 @@
+:root {
+    /* Eenheden */
+    --unit-default: 1rem;
+    --unit-small: 0.5rem;
+
+    /* Kleurem */
+    --color-primary: #121212;
+    --color-secundary: #f7f7f7;
+    --color-accent: #AAA;
+    --color-blue: #0594C6;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins;
+}
