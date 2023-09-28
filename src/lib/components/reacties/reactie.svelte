@@ -24,7 +24,7 @@
 		grid-template-rows: 1fr 1fr auto;
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
-		border: 2px solid #f0f0eb;
+		border: 2px solid var(--color-accent-50);
 		border-radius: var(--unit-small);
 		padding: var(--unit-small);
         box-shadow: var(--shadow-default);

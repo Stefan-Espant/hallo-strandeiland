@@ -6,11 +6,12 @@
     /* Kleurem */
     --color-primary: #121212;
     --color-secundary: #f7f7f7;
-    --color-accent: #AAA;
+    --color-accent-100: #AAA;
+    --color-accent-50: #f0f0eb;
     --color-blue: #0594C6;
 
     /* Schaduwen  */
-    --shadow-default: 0px 1px 7px rgba(135, 135, 135, 0.1), 0px 4px 5px -2px rgba(135, 135, 135, 0.12), 0px 10px 15px -5px rgba(0, 0, 0, 0.2);
+    --shadow-default: 0px 2px 8px rgba(135, 135, 135, 0.1), 0px 4px 4px -2px rgba(135, 135, 135, 0.12), 0px 8px 16px -4px rgba(0, 0, 0, 0.2);
 
 }
 
