@@ -3,7 +3,7 @@
 </script>
 
 <article>
-	<figure>
+	<div>
 		<!-- {#if showImage} -->
 			<!-- Externe afbeelding vanuit Hygraph -->
 			<img src="hygraph.com/image.jpg" alt="" />
@@ -26,8 +26,11 @@
                 fill="#0594C6"
             />
         </svg>
-		<figcaption hidden>Kees Hoffman</figcaption>
-	</figure>
+	</div>
+    <!-- <form method="post">
+        <label for="like" hidden>Vind ik leuk</label>
+        <input type="checkbox" name="like">
+    </form> -->
 	<h2>Kees Hoffman</h2>
 	<time datetime="2023-09-27">27 september 2023</time>
 	<blockquote>Dit is een citaat of een stukje tekst dat je wilt benadrukken.</blockquote>
@@ -36,6 +39,7 @@
 <style>
 	article {
 		width: 20rem;
+        background-color: var(--color-secundary);
         display: grid;
         grid-template-columns: 2.5rem 1fr;
         grid-template-rows: 2rem 2rem 1fr;
@@ -45,6 +49,7 @@
         border-radius: var(--unit-small);
         padding: var(--unit-small);
         box-shadow: var(--shadow-default);
+        position: relative;
 	}
 
 	article h2 {
@@ -53,13 +58,17 @@
 
 	}
 
-	figure {
+	div:first-child {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
 		gap: var(--unit-small);
 	}
+
+    form {
+        grid-row-start: 3;
+    }
 
 	svg {
 		width: 2rem;
