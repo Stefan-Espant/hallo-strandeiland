@@ -1,0 +1,29 @@
+:root {
+    /* Eenheden */
+    --unit-default: 1rem;
+    --unit-small: 0.5rem;
+
+    /* Kleurem */
+    --color-primary: #121212;
+    --color-secundary: #f7f7f7;
+    --color-accent-100: #AAA;
+    --color-accent-50: #f0f0eb;
+    --color-blue: #0594C6;
+
+    /* Schaduwen  */
+    --shadow-default: 0px 2px 8px rgba(135, 135, 135, 0.1), 0px 4px 4px -2px rgba(135, 135, 135, 0.12), 0px 8px 16px -4px rgba(0, 0, 0, 0.2);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: var(--unit-default);
+}
