@@ -22,6 +22,7 @@
     .root{
         /* font-family: poppins; */
     }
+    
     .nav-boven{
         text-align: right;
         background-color: #333;
@@ -45,6 +46,7 @@
         border-bottom-style: solid;
         border-width: .5px;
     }
+
     .nav-link2{
         margin-top: 30px;
         text-decoration: none;
@@ -65,6 +67,7 @@
         border-radius: 20px;
         margin: 10px;
     }
+
     .Wensen:hover{
         transform: scale(1.1);
 	    transition-duration: 1s;
