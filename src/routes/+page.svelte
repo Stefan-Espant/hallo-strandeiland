@@ -4,10 +4,21 @@
     import Searchbar from '$lib/components/searchbar/searchbar.svelte';
 </script>
 
-<Searchbar />
+<header>
+    <Navbar />
+</header>
 
-<Navbar />
+<main>
+
+<Searchbar />
 
 <Reactie />
 
+</main>
+
+<style>
+    main {
+        padding: var(--unit-default);
+    }
+</style>
 

@@ -47,10 +47,10 @@
 		grid-template-rows: 1fr;
 		grid-column-gap: var(--unit-small);
 		grid-row-gap: 0px;
-		border: 2px solid var(--color-accent-50);
+		border: var(--unit-pico) solid;
 		border-radius: var(--unit-small);
 		padding: var(--unit-small);
-		box-shadow: var(--shadow-default);
+		/* box-shadow: var(--shadow-default); */
 		position: relative;
 	}
 

@@ -1,4 +1,7 @@
 :root {
+    /* Animaties */
+    --animation-default: 0.2s;
+
     /* Eenheden */
     --unit-deca: 10rem;
     --unit-large: 2rem;
@@ -6,10 +9,12 @@
     --unit-small: 0.5rem;
     --unit-micro: 0.25rem;
     --unit-nano: 0.125rem;
+    --unit-pico: .5px;
 
     /* Kleurem */
     --color-primary: #121212;
     --color-secundary: #f7f7f7;
+    --color-secundary-pure: #fff;
     --color-accent-100: #aaa;
     --color-accent-50: #f0f0eb;
     --color-blue: #0594c6;
@@ -44,5 +49,27 @@ button {
     cursor: pointer;
     padding: var(--unit-micro);
     /* padding: var(--unit-default); */
-    
+}
+
+    button {
+        display: flex;
+        align-items: center;
+        gap: var(--unit-micro);
+        border: unset;
+        border-radius: var(--unit-micro);
+        padding: var(--unit-micro) var(--unit-default) var(--unit-micro) 0.8em;
+        transition: 0.2s ease-in-out;
+    }
+
+    button:is(:hover, :focus) {
+        background-color: var(--color-blue);
+        color: var(--color-secundary);
+    }
+
+    a:focus-visible, button:focus-visible {
+        border: var(--unit-pico) solid var(--color-primary);
+        background-color: inherit;
+        color: var(--color-primary);
+        outline: unset;
+    }
 }

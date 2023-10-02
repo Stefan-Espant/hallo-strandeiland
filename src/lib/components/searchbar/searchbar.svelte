@@ -27,33 +27,18 @@
         gap: var(--unit-small);
         width: 100%;
         background-color: var(--color-secundary);
-        border: var(--unit-nano) solid var(--color-accent-50);
+        border: var(--unit-pico) solid;
         border-radius: var(--unit-small);
         border-radius: var(--unit-small);
         padding: var(--unit-small);
-        box-shadow: var(--shadow-default);
+        /* box-shadow: var(--shadow-default); */
         position: relative;
     }
 
     input {
         width: inherit;
-        border-radius: var(--unit-small);
+        border-radius: var(--unit-micro);
         border: unset;
         padding-left: var(--unit-small);
-    }
-
-    button {
-        display: flex;
-        align-items: center;
-        gap: var(--unit-micro);
-        border: unset;
-        border-radius: var(--unit-small);
-        padding: var(--unit-micro) var(--unit-default) var(--unit-micro) 0.8em;
-        transition: 0.2s ease-in-out;
-    }
-
-    button:is(:hover, :focus) {
-        background-color: var(--color-blue);
-        color: var(--color-secundary);
     }
 </style>
