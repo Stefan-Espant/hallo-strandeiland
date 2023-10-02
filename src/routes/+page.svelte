@@ -1,9 +1,9 @@
 <script>
     import Reactie from '$lib/components/reacties/reactie.svelte';
-    // import searchbar from '$lib/components/searchbar/searchbar.svelte';
+    import Searchbar from '$lib/components/reacties/searchbar/searchbar.svelte';
 </script>
 
-<!-- <searchbar /> -->
+<Searchbar />
 
 <Reactie />
 

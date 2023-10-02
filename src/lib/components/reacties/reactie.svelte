@@ -6,7 +6,7 @@
 	<div>
 		<!-- {#if showImage} -->
 			<!-- Externe afbeelding vanuit Hygraph -->
-			<img src="hygraph.com/image.jpg" alt="" />
+			<!-- <img src="hygraph.com/image.jpg" alt="" /> -->
 		<!-- {:else} -->
 			<!-- Als er geen externe afbeelding is, toon dan de SVG -->
 			<!-- <svg width="" height="" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
