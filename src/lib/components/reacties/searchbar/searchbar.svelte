@@ -37,6 +37,7 @@
         width: inherit;
         border-radius: var(--unit-small);
         border: unset;
+        padding-left: var(--unit-small);
     }
 
     button {
