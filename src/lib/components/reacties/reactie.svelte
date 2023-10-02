@@ -27,13 +27,15 @@
             />
         </svg>
 	</div>
+	<blockquote>
     <!-- <form method="post">
         <label for="like" hidden>Vind ik leuk</label>
         <input type="checkbox" name="like">
     </form> -->
 	<h2>Kees Hoffman</h2>
 	<time datetime="2023-09-27">27 september 2023</time>
-	<blockquote>Dit is een citaat of een stukje tekst dat je wilt benadrukken.</blockquote>
+	<p>Dit is een citaat of een stukje tekst dat je wilt benadrukken.</p>
+	</blockquote>
 </article>
 
 <style>
@@ -66,9 +68,9 @@
 		gap: var(--unit-small);
 	}
 
-    form {
+    /* form {
         grid-row-start: 3;
-    }
+    } */
 
 	svg {
 		width: 2rem;
