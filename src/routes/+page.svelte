@@ -5,9 +5,8 @@
 </script>
 
 <Navbar />
+
 <Searchbar />
-
-
 
 <Reactie />
 
