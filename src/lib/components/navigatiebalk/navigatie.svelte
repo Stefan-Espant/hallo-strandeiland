@@ -4,6 +4,7 @@
         <a class="nav-link1" href="">inloggen of registreren</a>
     </nav>
 
+    
     <nav class="nav-beneden">
         <img src="hallo-strandeiland/assets/hallostrandeiland.png" alt="">
         <a class="nav-link2" href="">Berichten</a>
@@ -40,13 +41,16 @@
    
 
     .nav-beneden{
+        
         display: flex;
-        /* flex-direction: column; */
+        
         justify-content: space-evenly;
         border-bottom-style: solid;
         border-width: .5px;
+        
     }
 
+    
     .nav-link2{
         margin-top: 30px;
         text-decoration: none;
@@ -74,4 +78,14 @@
 	    
     }
 
-</style>
+
+    @media (max-width: 900px){
+    .nav-beneden{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+       
+    }
+}
+</style>    
