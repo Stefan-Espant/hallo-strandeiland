@@ -4,9 +4,10 @@
     import Searchbar from '$lib/components/reacties/searchbar/searchbar.svelte';
 </script>
 
+<Navbar />
 <Searchbar />
 
-<Navbar />
+
 
 <Reactie />
 
