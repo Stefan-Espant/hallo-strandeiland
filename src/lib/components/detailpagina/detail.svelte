@@ -1,7 +1,7 @@
 <section>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <p class="type">Wens</p>
+
     <h1 class="titel">Hondenstrand</h1>
 
     <p class="datum">Geplaatst op 25 mei 2024</p>
@@ -30,12 +30,14 @@
     }
     .titel{
         font-size: 30px;
-        margin: 30px;
+        margin-top: 20px;
     }
 
     .datum{
         margin-left: 30px;
+        margin-bottom: 30px;
         padding: 20px;
+        opacity: 50%;
     }
 
     article{
