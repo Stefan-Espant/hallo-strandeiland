@@ -2,14 +2,31 @@
     import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
     import Reactie from '$lib/components/reacties/reactie.svelte';
     import Searchbar from '$lib/components/searchbar/searchbar.svelte';
-    import Detail from '$lib/components/detailpagina/detail.svelte';
 
+    export let data
+    console.log(data)
 </script>
+
+
+{#each data.wishes as wish }
+  <h1>{wish.heading}</h1>
+{/each}
 
 <Navbar />
 
-<Searchbar />
+<main>
+    <Searchbar />
 
-<Detail />
+    <Reactie />
+</main>
+
+<style>
+    main {
+        width: 100%;
+        height: 100vh;
+        padding: var(--unit-default);
+        background-color: var(--color-accent-75);
+    }
+</style>
 
 <Reactie />
