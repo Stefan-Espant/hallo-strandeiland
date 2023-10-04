@@ -27,5 +27,8 @@
     "doc": "docs"
   },
   "author": "Stefan van der Kort",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "graphql-request": "^6.1.0"
+  }
 }
