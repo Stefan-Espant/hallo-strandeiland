@@ -91,6 +91,7 @@
 		padding: var(--unit-default);
 		border: 1px solid;
 		border-radius: var(--unit-small);
+        background-color: var(--color-secundary);
 	}
 
 	article img {
@@ -113,6 +114,9 @@
 		display: flex;
 		gap: var(--unit-small);
 		padding: var(--unit-small);
+        background-color: var(--color-secundary-pure);
+        border: 1px solid var(--color-accent-50);
+        color: var(--color-primary-50);
 	}
 
 	time {
