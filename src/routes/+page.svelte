@@ -76,6 +76,7 @@
 	}
 
 	section {
+        width: fit-content;
 		display: grid;
 		grid-template-columns: 1;
 		gap: var(--unit-default);
@@ -83,7 +84,7 @@
 	}
 
 	article {
-		width: 100%;
+		width: 20rem;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 20rem 1fr;
@@ -121,14 +122,15 @@
 		margin-bottom: var(--unit-default);
 	}
 
-	@media (min-width: 30rem) {
+	@media (min-width: 42rem) {
 		section {
 			grid-template-columns: 1fr 1fr;
 		}
 	}
 
-	@media (min-width: 60rem) {
+	@media (min-width: 64rem) {
 		section {
+            width: fit-content;
 			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
