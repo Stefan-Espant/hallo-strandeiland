@@ -1,8 +1,10 @@
 <script>
+    export let data
 	let showImage = true; // Stel in op 'false' als er geen externe afbeelding is
 </script>
 
 <article>
+	<!-- {#each reactions as reaction} -->
 	<figure>
 		<!-- {#if showImage} -->
 		<!-- Externe afbeelding vanuit Hygraph -->
@@ -36,6 +38,7 @@
 		<time datetime="2023-09-27">27 september 2023</time>
 		<p>Dit is een citaat of een stukje tekst dat je wilt benadrukken.</p>
 	</blockquote>
+	<!-- {/each} -->
 </article>
 
 <style>

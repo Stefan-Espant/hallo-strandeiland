@@ -3,23 +3,13 @@ import { hygraph } from '$lib/utils/hygraph.js'
 
 export async function load() {  
   let query = gql`
-  query wishes {
-    reactions {
-      id
-      fullname
-      submitField
-      date
-      likeButton
-    }
+  query assets {
     wishes {
       id
       heading
       discription
       date
       label
-      image {
-        url
-      }
     }
   }
   `
