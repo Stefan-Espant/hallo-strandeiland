@@ -40,7 +40,7 @@
 					</svg>
 					Geplaatst op: {wish.date}</time
 				>
-
+                <div>    
 				<mark>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -62,12 +62,20 @@
 					</svg>
 					{wish.label}
 				</mark>
+                <a href="/wens/{wish.id}">
+                    Bekijk deze wens
+                </a>
+                </div>
 			</article>
 		{/each}
 	</section>
 </main>
 
 <style>
+    a {
+        text-decoration: unset;
+    }
+
 	main {
 		width: 100%;
 		height: 100vh;
@@ -93,6 +101,24 @@
 		border-radius: var(--unit-small);
         background-color: var(--color-secundary);
 	}
+
+    article div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    article a {
+        color: var(--color-primary-50);
+        padding: var(--unit-small) var(--unit-default);
+        transition: var(--animation-default) ease-in-out;
+    }
+
+    article a:is(:hover, :focus) {
+        color: var(--color-secundary-pure);
+        background-color: var(--color-blue);
+    }
 
 	article img {
 		width: 100%;
