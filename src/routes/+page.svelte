@@ -7,11 +7,6 @@
     console.log(data)
 </script>
 
-
-{#each data.wishes as wish }
-  <h1>{wish.heading}</h1>
-{/each}
-
 <Navbar />
 
 <main>
