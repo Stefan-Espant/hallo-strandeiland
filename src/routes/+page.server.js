@@ -6,12 +6,16 @@ export async function load() {
   query wishes {
     wishes {
       heading
+      date
+      label
+      uid
+      discription
+      id
     }
   }
   `
 
   const request = await hygraph.request(query)
-  console.log(request)
 
   return request
   
