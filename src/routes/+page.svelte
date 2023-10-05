@@ -97,7 +97,7 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 20rem 1fr;
 		padding: var(--unit-default);
-		border: 1px solid;
+		border: 1px solid var(--color-accent-100);
 		border-radius: var(--unit-small);
         background-color: var(--color-secundary);
 	}
@@ -125,6 +125,8 @@
 		height: 20rem;
 		object-fit: cover;
         margin-bottom: var(--unit-default);
+        background-color: var(--color-primary-50);
+        border-radius: var(--unit-micro);
 	}
 
 	article h2 {

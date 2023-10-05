@@ -31,8 +31,7 @@
         gap: var(--unit-small);
         width: 100%;
         background-color: var(--color-secundary);
-        border: var(--unit-pico) solid;
-        border-radius: var(--unit-small);
+		border: 1px solid var(--color-accent-100);
         border-radius: var(--unit-small);
         padding: var(--unit-small);
         position: relative;
