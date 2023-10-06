@@ -44,29 +44,43 @@ article {
 
 /* Interactief */
 
-    a:hover, button:hover, input:hover {
-        cursor: pointer;
-    }
+a:hover, button:hover, input:hover {
+    cursor: pointer;
+}
 
-    button {
-        display: flex;
-        align-items: center;
-        gap: var(--unit-micro);
-        border: unset;
-        border-radius: var(--unit-micro);
-        padding: var(--unit-micro) var(--unit-default) var(--unit-micro) 0.8em;
-        transition: 0.2s ease-in-out;
-    }
+input[type="search"]:hover {
+    cursor: inherit;
+}
 
-    button:is(:hover, :focus) {
-        background-color: var(--color-blue);
-        color: var(--color-secundary);
-    }
+button {
+    display: flex;
+    align-items: center;
+    gap: var(--unit-micro);
+    border: unset;
+    border-radius: var(--unit-micro);
+    padding: var(--unit-micro) var(--unit-default) var(--unit-micro) 0.8em;
+    transition: 0.2s ease-in-out;
+}
+button:is(:hover, :focus) {
+    background-color: var(--color-blue);
+    color: var(--color-secundary);
+}
+a:focus-visible, button:focus-visible {
+    border: var(--unit-pico) solid var(--color-primary);
+    background-color: inherit;
+    color: var(--color-primary);
+    outline: unset;
+}
 
-    a:focus-visible, button:focus-visible {
-        border: var(--unit-pico) solid var(--color-primary);
-        background-color: inherit;
-        color: var(--color-primary);
-        outline: unset;
-    }
+/* Typografie */
+
+mark {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: var(--unit-small);
+    padding: var(--unit-small);
+    background-color: var(--color-secundary-pure);
+    border: 1px solid var(--color-accent-50);
+    color: var(--color-primary-50);
 }

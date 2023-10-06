@@ -136,16 +136,6 @@
 		overflow: hidden;
         margin: var(--unit-default) 0 var(--unit-small);
 	}
-	mark {
-		width: fit-content;
-		height: fit-content;
-		display: flex;
-		gap: var(--unit-small);
-		padding: var(--unit-small);
-        background-color: var(--color-secundary-pure);
-        border: 1px solid var(--color-accent-50);
-        color: var(--color-primary-50);
-	}
 
 	time {
 		display: flex;
