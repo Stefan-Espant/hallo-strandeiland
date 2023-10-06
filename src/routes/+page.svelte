@@ -77,8 +77,9 @@
     }
 
 	main {
-		width: 100%;
+		width: fit-content;
 		height: 100vh;
+        margin: auto;
 		padding: var(--unit-default);
 		background-color: var(--color-accent-75);
 	}
@@ -89,6 +90,7 @@
 		grid-template-columns: 1;
 		gap: var(--unit-default);
 		margin: auto;
+        margin-bottom: var(--unit-default);
 	}
 
 	article {

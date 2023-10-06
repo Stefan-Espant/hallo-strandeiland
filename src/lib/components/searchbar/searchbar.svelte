@@ -20,7 +20,6 @@
 <style>
 
     .searchbar {
-        width: 66vw;
         margin: 0 auto;
         margin-bottom: var(--unit-default);
     }

@@ -1,21 +1,28 @@
-import { gql } from 'graphql-request'
-import { hygraph } from '$lib/utils/hygraph.js'
+import { gql } from 'graphql-request';
+import { hygraph } from '$lib/utils/hygraph.js';
 
-export async function load() {  
+export async function load({ params }) {
+  const { id } = params;
+
   let query = gql`
-  query assets {
-    wishes {
-      id
-      heading
-      discription
-      date
-      label
+    query getWish($id: ID!) {
+      wish(where: { id: $id }) {
+        id
+        heading
+        discription
+        date
+        label
+      }
     }
-  }
-  `
+  `;
 
-  const request = await hygraph.request(query)
+  const variables = { id };
 
-  return request
-  
+  const request = await hygraph.request(query, variables);
+
+  return {
+    props: {
+      wish: request.wish,
+    },
+  };
 }

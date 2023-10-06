@@ -8,7 +8,8 @@
 <Navbar />
 
 <main>
-{#each data.wishes as wish }
+{#if data.wishes && data.wishes.length > 0}
+{#each data.wishes as wish}
 <section>
     <img src="{wish.image}" alt="foto van {wish.heading}" />
     <h2>{wish.heading}</h2>
@@ -24,6 +25,8 @@
 <mark>{wish.label}</mark>
 
 {/each}
+  <p>Geen wensen beschikbaar.</p>
+{/if}
 </main>
 
 <Reactie />
