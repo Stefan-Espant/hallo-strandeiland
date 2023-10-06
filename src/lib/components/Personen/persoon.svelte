@@ -1,3 +1,4 @@
+<!-- Personen component -->
 <section class="persoon_section">
 	<article class="persoon_artikel">
 		<p class="persoon_naam">Elske Rollema</p>
