@@ -9,7 +9,7 @@
 
 <Navbar />
 
-<!-- <Reactie /> -->
+<Reactie />
 
 <Personen />
 
