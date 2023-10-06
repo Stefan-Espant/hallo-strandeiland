@@ -3,7 +3,6 @@
     import Reactie from '$lib/components/reacties/reactie.svelte';
     import Searchbar from '$lib/components/reacties/searchbar/searchbar.svelte';
     import Personen from '$lib/components/personen/persoon.svelte';
-</script>
 
 	export let data;
 	console.log(data);
@@ -42,7 +41,7 @@
 					</svg>
 					Geplaatst op: {wish.date}</time
 				>
-
+                <div>    
 				<mark>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -64,6 +63,10 @@
 					</svg>
 					{wish.label}
 				</mark>
+                <a href="/wens/{wish.id}">
+                    Bekijk deze wens
+                </a>
+                </div>
 			</article>
 		{/each}
 	</section>
@@ -72,35 +75,63 @@
 <Personen />
 
 <style>
+    a {
+        text-decoration: unset;
+    }
+
 	main {
-		width: 100%;
+		width: fit-content;
 		height: 100vh;
+        margin: auto;
 		padding: var(--unit-default);
 		background-color: var(--color-accent-75);
 	}
 
 	section {
+        width: fit-content;
 		display: grid;
 		grid-template-columns: 1;
 		gap: var(--unit-default);
 		margin: auto;
+        margin-bottom: var(--unit-default);
 	}
 
 	article {
-		width: 100%;
+		width: 20rem;
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 20rem 1fr;
 		padding: var(--unit-default);
-		border: 1px solid;
+		border: 1px solid var(--color-accent-100);
 		border-radius: var(--unit-small);
+        background-color: var(--color-secundary);
 	}
+
+    article div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    article a {
+        color: var(--color-primary-50);
+        padding: var(--unit-small) var(--unit-default);
+        transition: var(--animation-default) ease-in-out;
+    }
+
+    article a:is(:hover, :focus) {
+        color: var(--color-secundary-pure);
+        background-color: var(--color-blue);
+    }
 
 	article img {
 		width: 100%;
 		height: 20rem;
 		object-fit: cover;
         margin-bottom: var(--unit-default);
+        background-color: var(--color-primary-50);
+        border-radius: var(--unit-micro);
 	}
 
 	article h2 {
@@ -110,13 +141,6 @@
 		overflow: hidden;
         margin: var(--unit-default) 0 var(--unit-small);
 	}
-	mark {
-		width: fit-content;
-		height: fit-content;
-		display: flex;
-		gap: var(--unit-small);
-		padding: var(--unit-small);
-	}
 
 	time {
 		display: flex;
@@ -125,15 +149,15 @@
 		margin-bottom: var(--unit-default);
 	}
 
-
-	@media (min-width: 30rem) {
+	@media (min-width: 42rem) {
 		section {
 			grid-template-columns: 1fr 1fr;
 		}
 	}
 
-	@media (min-width: 60rem) {
+	@media (min-width: 64rem) {
 		section {
+            width: fit-content;
 			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
