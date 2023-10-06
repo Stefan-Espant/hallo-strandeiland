@@ -4,8 +4,9 @@
         <a class="nav-link1" href="">inloggen of registreren</a>
     </nav>
 
+    
     <nav class="nav-beneden">
-        <img src="hallo-strandeiland/assets/hallostrandeiland.png" alt="">
+        <img src="https://hallostrandeiland.nl/blobs/gebiedsplatform/w250h250/98691/2022/50/hseTekengebied_8.png" alt="logo" />
         <a class="nav-link2" href="">Berichten</a>
         <a class="nav-link2" href="">Activiteiten</a>
         <a class="nav-link2" href="">Over Strandeiland</a>
@@ -40,13 +41,23 @@
    
 
     .nav-beneden{
+        
         display: flex;
+        background-color: var(--color-secundary-pure);
         /* flex-direction: column; */
+        
         justify-content: space-evenly;
         border-bottom-style: solid;
         border-width: .5px;
+        
     }
 
+    .nav-beneden img {
+        width: 86.5px;
+        aspect-ratio: 1/1;
+    }
+
+    
     .nav-link2{
         margin-top: 30px;
         text-decoration: none;
@@ -74,4 +85,14 @@
 	    
     }
 
-</style>
+
+    @media (max-width: 900px){
+    .nav-beneden{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+       
+    }
+}
+</style>    
