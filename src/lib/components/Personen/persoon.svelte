@@ -24,8 +24,8 @@
 		justify-content: center;
 		flex-direction: column;
 		text-align: center;
-        background-color: var( --color-secundary);
-        padding-top: 3rem;
+		background-color: var(--color-secundary);
+		padding-top: 3rem;
 	}
 
 	.persoon_artikel {
@@ -56,19 +56,18 @@
 	}
 
 	.persoon_beschrijving {
-        align-self: center;
-        margin-top: 2rem;
-        width: 20rem;
+		align-self: center;
+		margin-top: 2rem;
+		width: 15rem;
 	}
 
 	.beschrijving_titel {
-        font-size: 22px;
-        text-align: left;
+		font-size: 22px;
+		text-align: left;
 	}
 
 	.beschrijving {
-        font-size: 16px;
-        text-align: left;
+		font-size: 16px;
+		text-align: left;
 	}
-
 </style>
