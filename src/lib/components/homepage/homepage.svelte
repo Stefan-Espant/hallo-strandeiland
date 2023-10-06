@@ -17,7 +17,6 @@
 					a galley of type and scrambled it to make a type specimen book. It has survived not only
 					five centuries, but also the leap into electronic t
 				</p>
-
 				<a href="#" class="button">Lees meer</a>
 			</div>
 		</article>
@@ -157,7 +156,7 @@
 			</div>
 
 			<div class="card__data">
-				<h2 class="card__name">Strand</h2>
+				<h2>Strand</h2>
 				<p class="card__description">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
 					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
@@ -200,8 +199,23 @@
 
 <style>
 	/*=============== CARD ===============*/
+
+	:root{
+		-orange: #FFE700;
+	}
+	:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --primairy: #009ee2;
+  --secondary: #FFE700;
+  --lightgrey: #f0f0eb;
+}
 	section {
-		background-color: lightgrey;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		padding-left: 50px;
+		padding-right: 50px;
+		background-color: var(--lightgrey);
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		flex-direction: row;
@@ -210,23 +224,16 @@
 	}
 
 	.card__article {
-		width: 300px; /* Remove after adding swiper js */
+		width: 300px;
 		border-radius: 1.25rem;
 		overflow: hidden;
 	}
 
+	/* Card Image */
 	.card__image {
 		position: relative;
 		margin-bottom: -0.75rem;
-	}
-
-	.card__data {
-		background-color: #fff;
-		padding: 1.5rem 2rem;
-		border-radius: 1rem;
-		text-align: center;
-		position: relative;
-		z-index: 10;
+		height: 200px;
 	}
 
 	.card__img {
@@ -235,19 +242,46 @@
 		height: 100%;
 		position: relative;
 		z-index: 5;
+		object-fit: cover;
 	}
 
-	.card__description {
+	.card__data {
+		background-color: #fff;
+		transition: 0.3s;
+		padding: 1.5rem 2rem;
+		border-radius: 1rem;
+		position: relative;
+		z-index: 10;
+		height: 200px;
+	}
+
+	.card__data p{
+		display: none;
 		font-weight: 500;
 		margin-bottom: 1.75rem;
+	}
+
+	.card__data:hover > p{
+		display: block;
+	}
+
+	.card__data:hover {
+		height: 345px;
+	}
+
+	.card__data h2{
+		margin-bottom: 10px;
 	}
 
 	.button {
 		border: none;
 		font-size: 16px;
 		padding: 8px 16px;
-		background-color: yellow;
+		background-color: var(--secondary);
 		border-radius: 6px;
-		margin: 14px;
+		text-decoration: none;
+		color: black;
+		bottom: 25px;
+    	position: absolute;
 	}
 </style>
