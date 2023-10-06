@@ -10,6 +10,7 @@
 
 <Navbar />
 
+<!-- Wensen -->
 <main>
 	<Searchbar />
 
