@@ -12,6 +12,9 @@ export async function load({ params }) {
         discription
         date
         label
+        image {
+          url
+        }
       }
     }
   `;
