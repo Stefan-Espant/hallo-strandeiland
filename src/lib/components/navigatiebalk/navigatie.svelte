@@ -5,6 +5,7 @@
     </nav>
 
     
+    
     <nav class="nav-beneden">
         <a href="/"><img src="https://hallostrandeiland.nl/blobs/gebiedsplatform/w250h250/98691/2022/50/hseTekengebied_8.png" alt="logo" /></a>
         <a class="nav-link2" href="">Berichten</a>
@@ -59,6 +60,7 @@
 
     
     .nav-link2{
+        display: none;
         margin-top: 30px;
         text-decoration: none;
         color: black;
@@ -71,6 +73,7 @@
     }
     
     .Wensen{
+        display: none;
         background-color: yellow;
         text-decoration: none;
         color: black;
@@ -86,17 +89,22 @@
     }
 
 
-    @media (max-width: 900px){
+    @media (min-width: 900px){
         .nav-beneden{
         
             display: flex;
             background-color: var(--color-secundary-pure);
-            /* flex-direction: column; */
-            
+
             justify-content: space-evenly;
             border-bottom-style: solid;
             border-width: .5px;
         
+    }
+    .Wensen{
+        display: flex;
+    }
+    .nav-link2{
+        display: flex;
     }
 }
 </style>    
