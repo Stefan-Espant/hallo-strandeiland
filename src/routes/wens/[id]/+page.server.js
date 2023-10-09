@@ -9,9 +9,12 @@ export async function load({ params }) {
       wish(where: { id: $id }) {
         id
         heading
-        discription
+        description
         date
         label
+        image {
+          url
+        }
       }
     }
   `;
@@ -21,8 +24,6 @@ export async function load({ params }) {
   const request = await hygraph.request(query, variables);
 
   return {
-    props: {
-      wish: request.wish,
-    },
+      wish: request.wish
   };
 }

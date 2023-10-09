@@ -6,7 +6,7 @@
 
     
     <nav class="nav-beneden">
-        <img src="https://hallostrandeiland.nl/blobs/gebiedsplatform/w250h250/98691/2022/50/hseTekengebied_8.png" alt="logo" />
+        <a href="/"><img src="https://hallostrandeiland.nl/blobs/gebiedsplatform/w250h250/98691/2022/50/hseTekengebied_8.png" alt="logo" /></a>
         <a class="nav-link2" href="">Berichten</a>
         <a class="nav-link2" href="">Activiteiten</a>
         <a class="nav-link2" href="">Over Strandeiland</a>
