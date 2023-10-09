@@ -25,9 +25,6 @@
         margin: 30px;
     }
 
-    .type{
-       
-    }
     .titel{
         font-size: 30px;
         margin-top: 20px;
