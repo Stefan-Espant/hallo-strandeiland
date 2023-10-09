@@ -28,7 +28,7 @@ Voor dit project is gebruikgemaakt van:
   * 💻 Visual Studio Code
   * 🎨 Figma
   * 🐱 Github
-  * 
+    
 **Tech**
   * ⚙️ SvelteKit
   * 🖼️ Hygraph
