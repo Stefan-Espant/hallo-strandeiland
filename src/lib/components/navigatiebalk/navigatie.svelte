@@ -1,27 +1,27 @@
-<section class="section-nav">
+<header class="section-nav">
     <nav class="nav-boven">
-        <a class="nav-link1" href="">iets plaatsen</a>
-        <a class="nav-link1" href="">inloggen of registreren</a>
+        <a class="nav-link1" href="/">iets plaatsen</a>
+        <a class="nav-link1" href="/">inloggen of registreren</a>
     </nav>
 
     
     <nav class="nav-beneden">
         <img src="https://hallostrandeiland.nl/blobs/gebiedsplatform/w250h250/98691/2022/50/hseTekengebied_8.png" alt="logo" />
-        <a class="nav-link2" href="">Berichten</a>
-        <a class="nav-link2" href="">Activiteiten</a>
-        <a class="nav-link2" href="">Over Strandeiland</a>
-        <a class="nav-link2" href="">Planning</a>
-        <a class="nav-link2" href="">Participatieteam</a>
-        <a class="nav-link2" href="">Personen</a>
-        <a class="nav-link2" href="">Organisaties</a>
-        <a class="Wensen" href="">Wensen</a>
+        <a class="nav-link2" href="/">Berichten</a>
+        <a class="nav-link2" href="/">Activiteiten</a>
+        <a class="nav-link2" href="/">Over Strandeiland</a>
+        <a class="nav-link2" href="/">Planning</a>
+        <a class="nav-link2" href="/">Participatieteam</a>
+        <a class="nav-link2" href="/">Personen</a>
+        <a class="nav-link2" href="/">Organisaties</a>
+        <a class="Wensen" href="/">Wensen</a>
     </nav>
-</section>
+</header>
 
 
 <style>
     .root{
-        /* font-family: poppins; */
+        font-family: poppins;
     }
     
     .nav-boven{

@@ -14,7 +14,7 @@ export async function load() {
     wishes {
       id
       heading
-      discription
+      description
       date
       label
       image {

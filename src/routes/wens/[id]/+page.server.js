@@ -9,7 +9,7 @@ export async function load({ params }) {
       wish(where: { id: $id }) {
         id
         heading
-        discription
+        description
         date
         label
       }
