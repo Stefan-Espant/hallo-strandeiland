@@ -32,7 +32,6 @@
 
 </section>
 
-  <p>Geen wensen beschikbaar.</p>
 
 </main>
 

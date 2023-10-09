@@ -18,9 +18,7 @@
     }
 
 
-    article{
-        padding-top: 50px;
-    }
+  
     button{
         background-color: black;
         color: white;
