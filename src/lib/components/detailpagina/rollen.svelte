@@ -24,6 +24,13 @@
         color: white;
         margin: 5px;
     }
+
+    button:is(:hover, :focus){
+        scale: 1.1;
+        background-color: var(--color-blue);
+    }
+
+
     .knop{
         padding: 10px;
     }
