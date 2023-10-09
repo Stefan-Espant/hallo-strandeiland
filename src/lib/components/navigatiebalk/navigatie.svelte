@@ -44,7 +44,7 @@
         
         display: flex;
         background-color: var(--color-secundary-pure);
-        /* flex-direction: column; */
+       
         
         justify-content: space-evenly;
         border-bottom-style: solid;
@@ -87,12 +87,16 @@
 
 
     @media (max-width: 900px){
-    .nav-beneden{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        text-align: center;
-       
+        .nav-beneden{
+        
+            display: flex;
+            background-color: var(--color-secundary-pure);
+            /* flex-direction: column; */
+            
+            justify-content: space-evenly;
+            border-bottom-style: solid;
+            border-width: .5px;
+        
     }
 }
 </style>    

@@ -1,14 +1,6 @@
 <section>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-    <h1 class="titel">Hondenstrand</h1>
-
-    <p class="datum">Geplaatst op 25 mei 2024</p>
-   
-
-    <p>Hier komt alle info over de wens</p>
-
     <article>
         <button class="knop">Ik deel deze wens</button>
         <button class="knop">Ik wil helpen</button>
@@ -25,20 +17,6 @@
         margin: 30px;
     }
 
-    .type{
-       
-    }
-    .titel{
-        font-size: 30px;
-        margin-top: 20px;
-    }
-
-    .datum{
-        margin-left: 30px;
-        margin-bottom: 30px;
-        padding: 20px;
-        opacity: 50%;
-    }
 
     article{
         padding-top: 50px;
