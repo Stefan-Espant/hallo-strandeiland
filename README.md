@@ -22,11 +22,17 @@ Dit project omvat een overzicht van alle wensen van de toekomstige bewoners van 
 
 ## Kenmerken
 
+Voor dit project is gebruikgemaakt van:
+
 **Tools**
   * 💻 Visual Studio Code
   * 🎨 Figma
-  * 📡 Hygraph
   * 🐱 Github
+  * 
+**Tech**
+  * ⚙️ SvelteKit
+  * 🖼️ Hygraph
+  * 🖌️ CSS
 
 ## 📥 Installatie
 <!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
@@ -38,10 +44,13 @@ Dit project omvat een overzicht van alle wensen van de toekomstige bewoners van 
 5. Start een server met ```npm dev start```.
 
 ## Gebruik
-
+Dit platform is bedoelt om wensen op te halen van bewoners.
 
 ## Bronnen
-
+* [Huidige website "Hallo Strandeiland"](https://hallostrandeiland.nl/)
+* [10 principes of design](https://www.interaction-design.org/literature/article/dieter-rams-10-timeless-commandments-for-good-design)
+* [css grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+* [Hosting](https://vercel.com)
 
 ## Licentie
 This project is licensed under the terms of the [MIT license](./LICENSE).
