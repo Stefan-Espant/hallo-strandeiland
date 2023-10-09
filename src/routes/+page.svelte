@@ -12,7 +12,6 @@
 <!-- Wensen -->
 <main>
 	<Searchbar />
-
 	<section>
 		{#each data.wishes as wish}
 			<article>
