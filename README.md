@@ -1,38 +1,47 @@
-# create-svelte
+# 📣 Hallo strandeiland
+<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Wum- een overzicht van alle squadleden, de beste tools en het laatste FDND nieuws gemaakt met SvelteKit en Prismic.io.
+Hallo strandeiland is een sociaal platform waar bewoners ideeën en wensen kunnen plaatsen en de gemeente naar kan luisteren en radicaal transparant over de ontwikkeling kan communiceren.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## 🗃️ Inhoudsopgave
 
-## Creating a project
+  * [Beschrijving](#-beschrijving)
+  * [Kenmerken](#-kenmerken)
+  * [Installatie](#-installatie)
+  * [Gebruik](#-gebruik)
+  * [Bronnen](#-bronnen)
+  * [Licentie](#-licentie)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 📜 Beschrijving
+<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
+<!-- Voeg een mooie poster visual toe 📸 -->
+<!-- Voeg een link toe naar Github Pages 🌐-->
+Dit project omvat een overzicht van alle wensen van de toekomstige bewoners van Strandeiland.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+<img width="1624" alt="Schermafbeelding 2023-10-09 om 14 49 21" src="https://github.com/Stefan-Espant/hallo-strandeiland/assets/89298385/7ee5fe01-cf0f-433b-a326-fab0c35e8ff4">
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Kenmerken
 
-## Developing
+**Tools**
+  * 💻 Visual Studio Code
+  * 🎨 Figma
+  * 📡 Hygraph
+  * 🐱 Github
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## 📥 Installatie
+<!-- Bij Instalatie staat hoe een andere developer aan jouw repo kan werken -->
 
-```bash
-npm run dev
+1. Clone of download deze repository naar de gewenste folder.
+2. Open de root directory van dit project en open het project in een code editor naar keuze.
+3. Gebruik ```npm install``` om de benodigde packages te downloaden voor dit project.
+4. Voor het gebruik van Hygraph om data in te laden gebruik dan het commando ```npm graphql-request``` om requesten te fetchen.
+5. Start een server met ```npm dev start```.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Gebruik
 
-## Building
 
-To create a production version of your app:
+## Bronnen
 
-```bash
-npm run build
-```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Licentie
+This project is licensed under the terms of the [MIT license](./LICENSE).
