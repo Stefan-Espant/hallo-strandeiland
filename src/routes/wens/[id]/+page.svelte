@@ -15,18 +15,21 @@
 </span>
 
 <section>
-    <h2>{data.props.wish.heading}</h2>
-    <img src="{data.props.wish.image.url}" alt="foto van {data.props.wish.heading}" />
+    <p>Wens</p>
+    <span>
+        <h2>{data.wish.heading}</h2>
+        <mark>{data.wish.label}</mark>
+    </span>
+    <img src="{data.wish.image.url}" alt="foto van {data.wish.heading}" />
     <time>
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-flag-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
         <path d="M5 14h14v-9h-14v16"></path>
      </svg>
-     Geplaatst op: {data.props.wish.date}</time>
-    <p>{data.props.wish.discription}</p>
+     Geplaatst op: {data.wish.date}</time>
+    <p>{data.wish.description}</p>
 
 </section>
-<mark>{data.props.wish.label}</mark>
 
   <p>Geen wensen beschikbaar.</p>
 
@@ -42,7 +45,7 @@
     }
 
     section {
-        width: 30%;
+        width: 35%;
         display: flex;
         flex-flow: column wrap;
         margin-left: 20%;
@@ -50,8 +53,7 @@
     }
 
     mark {
-        padding: var(--unit-small);
-        
+        padding: 0em 0em 2em 3em;
     }
 
     time {
@@ -59,7 +61,7 @@
         align-items: center;
         gap: var(--unit-small);
         margin-bottom: var(--unit-default);
-        padding: var(--unit-default);
+        padding: 1em 0em 0em 2em;
     }
     section img {
 		width: 100%;
@@ -74,11 +76,16 @@
         font-weight: 800;
         color: #333;
         font-size: 1.7em;
-        padding: var(--unit-default);
+        padding: 0em 0em 0em 1.8em;
+    }
+    section p:first-child{
+        padding: 3em 0em 2em 3em;
+        font-variant-caps: all-small-caps;
     }
     section p{
-        padding: var(--unit-default);
+        padding: 1em 0em 1em 2em;
     }
+
     a{
         text-decoration: none;
     }
