@@ -1,3 +1,11 @@
+<script>
+    import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
+
+    export let data
+</script>
+
+    <Navbar />
+<main>
 <!-- Personen component -->
 <section class="persoon_section">
 	<article class="persoon_artikel">
@@ -5,7 +13,7 @@
 	</article>
 
 	<article class="persoon_foto">
-		<img src="#" alt="Foto van persoon" />
+		<img src={data.persoon.image.url} alt="Foto van persoon" />
 	</article>
 
 	<article class="persoon_beschrijving">
@@ -17,6 +25,7 @@
 		</p>
 	</article>
 </section>
+</main>
 
 <style>
 	.persoon_section {
@@ -50,10 +59,11 @@
 	}
 
 	.persoon_foto {
+        margin-top: 1rem;
 		align-self: center;
 		border: 2px solid var(--color-primary);
-		width: 15rem;
-		height: 15rem;
+		width: 15.2rem;
+		height: 20.2rem;
 	}
 
 	.persoon_beschrijving {
