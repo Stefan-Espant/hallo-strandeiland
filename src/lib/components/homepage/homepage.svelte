@@ -1,169 +1,409 @@
 <main>
 	<section>
-		<article class="card__article">
-			<div class="card__image">
+		<article class="card_article">
+			<div class="card_image">
 				<img
 					src="https://hips.hearstapps.com/hmg-prod/images/view-of-beach-against-clear-blue-sky-royalty-free-image-1614177716.?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"
 					alt="image"
-					class="card__img"
+					class="card_img"
 				/>
+				<div class="card_image_body">
+					<h3>Beschrijving:</h3>
+					<p class="card_description">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been the industry's standard dummy text ever since the 1500s, when an unknown
+						printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic t
+					</p>
+				</div>
 			</div>
 
-			<div class="card__data">
-				<h2 class="card__name">Strand</h2>
-				<p class="card__description">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-					a galley of type and scrambled it to make a type specimen book. It has survived not only
-					five centuries, but also the leap into electronic t
-				</p>
+			<div class="card_data">
+				<h2 class="card_name">Strand</h2>
+				<span class="card_date">Geplaats op: 23-02-2000</span>
+				<div class="card_label">
+					<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 448 512"
+						><style>
+							svg {
+								fill: #c2c2c2;
+							}
+						</style><path
+							d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+						/></svg
+					>
+					<span>Natuur</span>
+				</div>
+				<h3>Supporters: <span>4</span></h3>
 				<a href="#" class="button">Lees meer</a>
 			</div>
 		</article>
-		<article class="card__article">
-			<div class="card__image">
+		<article class="card_article">
+			<div class="card_image">
 				<img
 					src="https://hips.hearstapps.com/hmg-prod/images/view-of-beach-against-clear-blue-sky-royalty-free-image-1614177716.?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"
 					alt="image"
-					class="card__img"
+					class="card_img"
 				/>
+				<div class="card_image_body">
+					<h3>Beschrijving:</h3>
+					<p class="card_description">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been the industry's standard dummy text ever since the 1500s, when an unknown
+						printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic t
+					</p>
+				</div>
 			</div>
 
-			<div class="card__data">
-				<h2 class="card__name">Strand</h2>
-				<p class="card__description">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-					a galley of type and scrambled it to make a type specimen book. It has survived not only
-					five centuries, but also the leap into electronic t
-				</p>
-
+			<div class="card_data">
+				<h2 class="card_name">Strand</h2>
+				<span class="card_date">Geplaats op: 23-02-2000</span>
+				<div class="card_label">
+					<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 448 512"
+						><style>
+							svg {
+								fill: #c2c2c2;
+							}
+						</style><path
+							d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+						/></svg
+					>
+					<span>Natuur</span>
+				</div>
+				<h3>Supporters: <span>4</span></h3>
 				<a href="#" class="button">Lees meer</a>
 			</div>
 		</article>
-		<article class="card__article">
-			<div class="card__image">
+		<article class="card_article">
+			<div class="card_image">
 				<img
 					src="https://hips.hearstapps.com/hmg-prod/images/view-of-beach-against-clear-blue-sky-royalty-free-image-1614177716.?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"
 					alt="image"
-					class="card__img"
+					class="card_img"
 				/>
+				<div class="card_image_body">
+					<h3>Beschrijving:</h3>
+					<p class="card_description">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been the industry's standard dummy text ever since the 1500s, when an unknown
+						printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic t
+					</p>
+				</div>
 			</div>
 
-			<div class="card__data">
-				<h2 class="card__name">Strand</h2>
-				<p class="card__description">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-					a galley of type and scrambled it to make a type specimen book. It has survived not only
-					five centuries, but also the leap into electronic t
-				</p>
-
+			<div class="card_data">
+				<h2 class="card_name">Strand</h2>
+				<span class="card_date">Geplaats op: 23-02-2000</span>
+				<div class="card_label">
+					<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 448 512"
+						><style>
+							svg {
+								fill: #c2c2c2;
+							}
+						</style><path
+							d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+						/></svg
+					>
+					<span>Natuur</span>
+				</div>
+				<h3>Supporters: <span>4</span></h3>
 				<a href="#" class="button">Lees meer</a>
 			</div>
 		</article>
-		<article class="card__article">
-			<div class="card__image">
+		<article class="card_article">
+			<div class="card_image">
 				<img
 					src="https://hips.hearstapps.com/hmg-prod/images/view-of-beach-against-clear-blue-sky-royalty-free-image-1614177716.?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"
 					alt="image"
-					class="card__img"
+					class="card_img"
 				/>
+				<div class="card_image_body">
+					<h3>Beschrijving:</h3>
+					<p class="card_description">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been the industry's standard dummy text ever since the 1500s, when an unknown
+						printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic t
+					</p>
+				</div>
 			</div>
 
-			<div class="card__data">
-				<h2 class="card__name">Strand</h2>
-				<p class="card__description">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-					a galley of type and scrambled it to make a type specimen book. It has survived not only
-					five centuries, but also the leap into electronic t
-				</p>
-
+			<div class="card_data">
+				<h2 class="card_name">Strand</h2>
+				<span class="card_date">Geplaats op: 23-02-2000</span>
+				<div class="card_label">
+					<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 448 512"
+						><style>
+							svg {
+								fill: #c2c2c2;
+							}
+						</style><path
+							d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+						/></svg
+					>
+					<span>Natuur</span>
+				</div>
+				<h3>Supporters: <span>4</span></h3>
 				<a href="#" class="button">Lees meer</a>
 			</div>
 		</article>
-		<article class="card__article">
-			<div class="card__image">
+		<article class="card_article">
+			<div class="card_image">
 				<img
 					src="https://hips.hearstapps.com/hmg-prod/images/view-of-beach-against-clear-blue-sky-royalty-free-image-1614177716.?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"
 					alt="image"
-					class="card__img"
+					class="card_img"
 				/>
+				<div class="card_image_body">
+					<h3>Beschrijving:</h3>
+					<p class="card_description">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been the industry's standard dummy text ever since the 1500s, when an unknown
+						printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic t
+					</p>
+				</div>
 			</div>
 
-			<div class="card__data">
-				<h2 class="card__name">Strand</h2>
-				<p class="card__description">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-					a galley of type and scrambled it to make a type specimen book. It has survived not only
-					five centuries, but also the leap into electronic t
-				</p>
-
+			<div class="card_data">
+				<h2 class="card_name">Strand</h2>
+				<span class="card_date">Geplaats op: 23-02-2000</span>
+				<div class="card_label">
+					<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 448 512"
+						><style>
+							svg {
+								fill: #c2c2c2;
+							}
+						</style><path
+							d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+						/></svg
+					>
+					<span>Natuur</span>
+				</div>
+				<h3>Supporters: <span>4</span></h3>
 				<a href="#" class="button">Lees meer</a>
 			</div>
 		</article>
-		<article class="card__article">
-			<div class="card__image">
+		<article class="card_article">
+			<div class="card_image">
 				<img
 					src="https://hips.hearstapps.com/hmg-prod/images/view-of-beach-against-clear-blue-sky-royalty-free-image-1614177716.?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"
 					alt="image"
-					class="card__img"
+					class="card_img"
 				/>
+				<div class="card_image_body">
+					<h3>Beschrijving:</h3>
+					<p class="card_description">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been the industry's standard dummy text ever since the 1500s, when an unknown
+						printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic t
+					</p>
+				</div>
 			</div>
 
-			<div class="card__data">
-				<h2 class="card__name">Strand</h2>
-				<p class="card__description">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-					a galley of type and scrambled it to make a type specimen book. It has survived not only
-					five centuries, but also the leap into electronic t
-				</p>
-
+			<div class="card_data">
+				<h2 class="card_name">Strand</h2>
+				<span class="card_date">Geplaats op: 23-02-2000</span>
+				<div class="card_label">
+					<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 448 512"
+						><style>
+							svg {
+								fill: #c2c2c2;
+							}
+						</style><path
+							d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+						/></svg
+					>
+					<span>Natuur</span>
+				</div>
+				<h3>Supporters: <span>4</span></h3>
 				<a href="#" class="button">Lees meer</a>
 			</div>
 		</article>
-		<article class="card__article">
-			<div class="card__image">
+		<article class="card_article">
+			<div class="card_image">
 				<img
 					src="https://hips.hearstapps.com/hmg-prod/images/view-of-beach-against-clear-blue-sky-royalty-free-image-1614177716.?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"
 					alt="image"
-					class="card__img"
+					class="card_img"
 				/>
+				<div class="card_image_body">
+					<h3>Beschrijving:</h3>
+					<p class="card_description">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been the industry's standard dummy text ever since the 1500s, when an unknown
+						printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic t
+					</p>
+				</div>
 			</div>
 
-			<div class="card__data">
-				<h2 class="card__name">Strand</h2>
-				<p class="card__description">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-					a galley of type and scrambled it to make a type specimen book. It has survived not only
-					five centuries, but also the leap into electronic t
-				</p>
-
+			<div class="card_data">
+				<h2 class="card_name">Strand</h2>
+				<span class="card_date">Geplaats op: 23-02-2000</span>
+				<div class="card_label">
+					<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 448 512"
+						><style>
+							svg {
+								fill: #c2c2c2;
+							}
+						</style><path
+							d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+						/></svg
+					>
+					<span>Natuur</span>
+				</div>
+				<h3>Supporters: <span>4</span></h3>
 				<a href="#" class="button">Lees meer</a>
 			</div>
 		</article>
-		<article class="card__article">
-			<div class="card__image">
+		<article class="card_article">
+			<div class="card_image">
 				<img
 					src="https://hips.hearstapps.com/hmg-prod/images/view-of-beach-against-clear-blue-sky-royalty-free-image-1614177716.?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"
 					alt="image"
-					class="card__img"
+					class="card_img"
 				/>
+				<div class="card_image_body">
+					<h3>Beschrijving:</h3>
+					<p class="card_description">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been the industry's standard dummy text ever since the 1500s, when an unknown
+						printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic t
+					</p>
+				</div>
 			</div>
 
-			<div class="card__data">
-				<h2>Strand</h2>
-				<p class="card__description">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-					been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-					a galley of type and scrambled it to make a type specimen book. It has survived not only
-					five centuries, but also the leap into electronic t
-				</p>
+			<div class="card_data">
+				<h2 class="card_name">Strand</h2>
+				<span class="card_date">Geplaats op: 23-02-2000</span>
+				<div class="card_label">
+					<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 448 512"
+						><style>
+							svg {
+								fill: #c2c2c2;
+							}
+						</style><path
+							d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+						/></svg
+					>
+					<span>Natuur</span>
+				</div>
+				<h3>Supporters: <span>4</span></h3>
+				<a href="#" class="button">Lees meer</a>
+			</div>
+		</article>
+		<article class="card_article">
+			<div class="card_image">
+				<img
+					src="https://hips.hearstapps.com/hmg-prod/images/view-of-beach-against-clear-blue-sky-royalty-free-image-1614177716.?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"
+					alt="image"
+					class="card_img"
+				/>
+				<div class="card_image_body">
+					<h3>Beschrijving:</h3>
+					<p class="card_description">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been the industry's standard dummy text ever since the 1500s, when an unknown
+						printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic t
+					</p>
+				</div>
+			</div>
 
+			<div class="card_data">
+				<h2 class="card_name">Strand</h2>
+				<span class="card_date">Geplaats op: 23-02-2000</span>
+				<div class="card_label">
+					<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 448 512"
+						><style>
+							svg {
+								fill: #c2c2c2;
+							}
+						</style><path
+							d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+						/></svg
+					>
+					<span>Natuur</span>
+				</div>
+				<h3>Supporters: <span>4</span></h3>
+				<a href="#" class="button">Lees meer</a>
+			</div>
+		</article>
+		<article class="card_article">
+			<div class="card_image">
+				<img
+					src="https://hips.hearstapps.com/hmg-prod/images/view-of-beach-against-clear-blue-sky-royalty-free-image-1614177716.?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"
+					alt="image"
+					class="card_img"
+				/>
+				<div class="card_image_body">
+					<h3>Beschrijving:</h3>
+					<p class="card_description">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been the industry's standard dummy text ever since the 1500s, when an unknown
+						printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic t
+					</p>
+				</div>
+			</div>
+
+			<div class="card_data">
+				<h2 class="card_name">Strand</h2>
+				<span class="card_date">Geplaats op: 23-02-2000</span>
+				<div class="card_label">
+					<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 448 512"
+						><style>
+							svg {
+								fill: #c2c2c2;
+							}
+						</style><path
+							d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+						/></svg
+					>
+					<span>Natuur</span>
+				</div>
+				<h3>Supporters: <span>4</span></h3>
+				<a href="#" class="button">Lees meer</a>
+			</div>
+		</article>
+		<article class="card_article">
+			<div class="card_image">
+				<img
+					src="https://hips.hearstapps.com/hmg-prod/images/view-of-beach-against-clear-blue-sky-royalty-free-image-1614177716.?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*"
+					alt="image"
+					class="card_img"
+				/>
+				<div class="card_image_body">
+					<h3>Beschrijving:</h3>
+					<p class="card_description">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+						has been the industry's standard dummy text ever since the 1500s, when an unknown
+						printer took a galley of type and scrambled it to make a type specimen book. It has
+						survived not only five centuries, but also the leap into electronic t
+					</p>
+				</div>
+			</div>
+
+			<div class="card_data">
+				<h2 class="card_name">Strand</h2>
+				<span class="card_date">Geplaats op: 23-02-2000</span>
+				<div class="card_label">
+					<svg xmlns="http://www.w3.org/2000/svg" height="13px" viewBox="0 0 448 512"
+						><style>
+							svg {
+								fill: #c2c2c2;
+							}
+						</style><path
+							d="M0 80V229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+						/></svg
+					>
+					<span>Natuur</span>
+				</div>
+				<h3>Supporters: <span>4</span></h3>
 				<a href="#" class="button">Lees meer</a>
 			</div>
 		</article>
@@ -200,16 +440,16 @@
 <style>
 	/*=============== CARD ===============*/
 
-	:root{
-		-orange: #FFE700;
+	:root {
+		-orange: #ffe700;
 	}
 	:root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --primairy: #009ee2;
-  --secondary: #FFE700;
-  --lightgrey: #f0f0eb;
-}
+		/*========== Colors ==========*/
+		/*Color mode HSL(hue, saturation, lightness)*/
+		--primairy: #009ee2;
+		--secondary: #ffe700;
+		--lightgrey: #f0f0eb;
+	}
 	section {
 		padding-top: 100px;
 		padding-bottom: 100px;
@@ -220,23 +460,72 @@
 		grid-template-columns: repeat(4, 1fr);
 		flex-direction: row;
 		width: 100%;
-		gap: 3em;
+		gap: 2em;
 	}
 
-	.card__article {
-		width: 300px;
+	.card_article {
+		width: 100%;
 		border-radius: 1.25rem;
 		overflow: hidden;
+		border: 1px solid;
+		margin-bottom: 0;
+	}
+
+	.card_article:hover .card_image_body {
+		z-index: 10;
+		transition: ease-in-out;
+	}
+
+	.card_head {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.card_label {
+		margin-top: 10px;
+	}
+
+	.card_label span {
+		margin-left: 5px;
+	}
+
+	.card_head .card_date {
+		font-size: 86%;
+		font-variant-caps: all-small-caps;
+	}
+
+	.card_image_body {
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		position: absolute;
+		background: #1f3d4738;
+		backdrop-filter: blur(5px);
+		padding: 30px;
+		color: white;
+	}
+
+	.card_image_body h3 {
+		margin-bottom: 5px;
+	}
+
+	.card_image_body p {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 7;
+		line-height: 20px;
 	}
 
 	/* Card Image */
-	.card__image {
+	.card_image {
 		position: relative;
 		margin-bottom: -0.75rem;
-		height: 200px;
+		height: 260px;
 	}
 
-	.card__img {
+	.card_img {
 		width: 100%;
 		margin: 0 auto;
 		height: 100%;
@@ -245,32 +534,33 @@
 		object-fit: cover;
 	}
 
-	.card__data {
+	.card_data {
 		background-color: #fff;
 		transition: 0.3s;
 		padding: 1.5rem 2rem;
 		border-radius: 1rem;
 		position: relative;
 		z-index: 10;
-		height: 200px;
+		padding-bottom: 80px;
+		border-top: 1px solid;
 	}
 
-	.card__data p{
-		display: none;
+	.card_data p {
 		font-weight: 500;
 		margin-bottom: 1.75rem;
 	}
 
-	.card__data:hover > p{
-		display: block;
-	}
-
-	.card__data:hover {
-		height: 345px;
-	}
-
-	.card__data h2{
+	.card_data h2 {
 		margin-bottom: 10px;
+	}
+
+	.card_data h3 {
+		margin-top: 35px;
+		font-weight: 500;
+	}
+
+	.card_data h3 span {
+		font-weight: 600;
 	}
 
 	.button {
@@ -282,6 +572,10 @@
 		text-decoration: none;
 		color: black;
 		bottom: 25px;
-    	position: absolute;
+		position: absolute;
+	}
+	.button:hover {
+	color: white;
+	background-color: black;
 	}
 </style>
