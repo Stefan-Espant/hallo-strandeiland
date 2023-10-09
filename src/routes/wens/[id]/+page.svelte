@@ -1,6 +1,7 @@
 <script>
     import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
     import Reactie from '$lib/components/reacties/reactie.svelte';
+    import Rollen from '$lib/components/detailpagina/rollen.svelte';
 
     export let data
 </script>
@@ -31,24 +32,12 @@
 
 </section>
 
-  <p>Geen wensen beschikbaar.</p>
 
 </main>
 
 
 
-<section>
-        <article>
-            <button class="knop">Ik deel deze wens</button>
-            <button class="knop">Ik wil helpen</button>
-            <button class="knop">Ik wil trekker zijn</button>
-        </article>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <p>Deel dit: <a href=""><i style="font-size:24px" class="fa">&#xf08c;</i></a> 
-                 <a href=""><i style="font-size:24px" class="fa">&#xf09a;</i></a>
-                </p>
-</section>
+<Rollen />
 
 
 <Reactie />

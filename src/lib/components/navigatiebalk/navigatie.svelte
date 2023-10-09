@@ -5,25 +5,23 @@
     </nav>
 
     
+    
     <nav class="nav-beneden">
         <a href="/"><img src="https://hallostrandeiland.nl/blobs/gebiedsplatform/w250h250/98691/2022/50/hseTekengebied_8.png" alt="logo" /></a>
-        <a class="nav-link2" href="">Berichten</a>
-        <a class="nav-link2" href="">Activiteiten</a>
-        <a class="nav-link2" href="">Over Strandeiland</a>
-        <a class="nav-link2" href="">Planning</a>
-        <a class="nav-link2" href="">Participatieteam</a>
-        <a class="nav-link2" href="">Personen</a>
-        <a class="nav-link2" href="">Organisaties</a>
-        <a class="Wensen" href="">Wensen</a>
+        <a class="nav-link2" href="/">Berichten</a>
+        <a class="nav-link2" href="/">Activiteiten</a>
+        <a class="nav-link2" href="/">Over Strandeiland</a>
+        <a class="nav-link2" href="/">Planning</a>
+        <a class="nav-link2" href="/">Participatieteam</a>
+        <a class="nav-link2" href="/">Personen</a>
+        <a class="nav-link2" href="/">Organisaties</a>
+        <a class="Wensen" href="/">Wensen</a>
     </nav>
 </section>
 
 
 <style>
-    .root{
-        /* font-family: poppins; */
-    }
-    
+   
     .nav-boven{
         text-align: right;
         background-color: #333;
@@ -40,17 +38,6 @@
     }
    
 
-    .nav-beneden{
-        
-        display: flex;
-        background-color: var(--color-secundary-pure);
-        /* flex-direction: column; */
-        
-        justify-content: space-evenly;
-        border-bottom-style: solid;
-        border-width: .5px;
-        
-    }
 
     .nav-beneden img {
         width: 86.5px;
@@ -59,6 +46,7 @@
 
     
     .nav-link2{
+        display: none;
         margin-top: 30px;
         text-decoration: none;
         color: black;
@@ -71,6 +59,7 @@
     }
     
     .Wensen{
+        display: none;
         background-color: yellow;
         text-decoration: none;
         color: black;
@@ -86,13 +75,22 @@
     }
 
 
-    @media (max-width: 900px){
-    .nav-beneden{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        text-align: center;
-       
+    @media (min-width: 980px){
+        .nav-beneden{
+        
+            display: flex;
+            background-color: var(--color-secundary-pure);
+
+            justify-content: space-evenly;
+            border-bottom-style: solid;
+            border-width: .5px;
+        
+    }
+    .Wensen{
+        display: flex;
+    }
+    .nav-link2{
+        display: flex;
     }
 }
 </style>    
