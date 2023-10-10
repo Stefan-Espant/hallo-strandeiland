@@ -93,9 +93,11 @@
 	.nav-beneden {
 		display: flex;
 		background-color: var(--color-secundary-pure);
-		justify-content: space-evenly;
+		justify-content: space-between;
 		border-bottom-style: solid;
 		border-width: 0.5px;
+        padding-left: 50px;
+        padding-right: 50px;
 	}
 
 	.nav-boven {
@@ -173,6 +175,7 @@
     details{
         margin: 10px;
         margin-top: 30px;
+        text-align: right;
     }
   
   
