@@ -38,7 +38,6 @@
     }
 
     article{
-        
         padding-top: 50px;
     }
     button{
