@@ -10,19 +10,15 @@
 	// Functie om te zoeken
 	function searchWishes() {
 		const searchTerm = searchInput.value.toLowerCase();
-		filteredWishes = data.wishes.filter(wish =>
-			wish.heading.toLowerCase().includes(searchTerm)
-		);
+		filteredWishes = data.wishes.filter((wish) => wish.heading.toLowerCase().includes(searchTerm));
 	}
 
 	onMount(() => {
 		searchInput.addEventListener('input', searchWishes);
 	});
-
 </script>
 
 <Navbar />
-
 
 <main>
 	<!-- De zoekbalk voor het zoeken naar wensen -->
@@ -176,6 +172,7 @@
 		padding: var(--unit-default);
 		border-radius: var(--unit-small);
 		background-color: var(--color-secundary);
+		animation: fade-in var(--animation-default) ease-in-out;
 	}
 
 	article div {
@@ -230,6 +227,17 @@
 		section {
 			width: fit-content;
 			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+			transform: translateY(var(--unit-default)); /* Optioneel: voeg een lichte verticale verschuiving toe */
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
 		}
 	}
 </style>
