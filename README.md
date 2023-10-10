@@ -1,3 +1,5 @@
+![Schermafbeelding 2023-10-10 om 14 33 52](https://github.com/Stefan-Espant/hallo-strandeiland/assets/89298385/e6613e0a-6898-4237-ad3d-13577cc94de4)
+
 # 📣 Hallo strandeiland
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 Wum- een overzicht van alle squadleden, de beste tools en het laatste FDND nieuws gemaakt met SvelteKit en Prismic.io.
