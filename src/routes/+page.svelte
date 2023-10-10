@@ -1,18 +1,17 @@
 <script>
-    import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
-    import Reactie from '$lib/components/reacties/reactie.svelte';
-    import Searchbar from '$lib/components/searchbar/searchbar.svelte';
-    
-
+	import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
+	import Reactie from '$lib/components/reacties/reactie.svelte';
+	import SearchBar from '$lib/components/searchbar/searchbar.svelte';
+  
 	export let data;
-	console.log(data);
-</script>
+  </script>
 
 <Navbar />
 
 <!-- Wensen -->
 <main>
-	<Searchbar />
+	<SearchBar />
+
 	<section>
 		{#each data.wishes as wish}
 			<article>
@@ -72,8 +71,7 @@
 
         
 	</section>
-
-    <Reactie />
+    
 </main>
 
 <style>
@@ -104,7 +102,6 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 20rem 1fr;
 		padding: var(--unit-default);
-		border: 1px solid var(--color-accent-100);
 		border-radius: var(--unit-small);
         background-color: var(--color-secundary);
 	}

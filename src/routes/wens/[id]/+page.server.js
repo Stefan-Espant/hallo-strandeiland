@@ -24,6 +24,6 @@ export async function load({ params }) {
   const request = await hygraph.request(query, variables);
 
   return {
-      wish: request.wish
+      wish: request.wish // Hier halen we de enkele wens op
   };
 }

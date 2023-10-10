@@ -17,6 +17,10 @@
         margin: 30px;
     }
 
+    .titel{
+        font-size: 30px;
+        margin-top: 20px;
+    }
 
   
     button{
