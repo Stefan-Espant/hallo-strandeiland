@@ -1,19 +1,62 @@
 <script>
 	import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
-	import Reactie from '$lib/components/reacties/reactie.svelte';
-	import SearchBar from '$lib/components/searchbar/searchbar.svelte';
-  
+	import { onMount } from 'svelte';
+
 	export let data;
-  </script>
+
+	let searchInput = null;
+	let filteredWishes = data.wishes;
+
+	// Functie om te zoeken
+	function searchWishes() {
+		const searchTerm = searchInput.value.toLowerCase();
+		filteredWishes = data.wishes.filter(wish =>
+			wish.heading.toLowerCase().includes(searchTerm)
+		);
+	}
+
+	onMount(() => {
+		searchInput.addEventListener('input', searchWishes);
+	});
+
+</script>
 
 <Navbar />
 
-<!-- Wensen -->
-<main>
-	<SearchBar />
 
-	<section>
-		{#each data.wishes as wish}
+<main>
+	<!-- De zoekbalk voor het zoeken naar wensen -->
+	<article class="searchbar">
+		<form method="get" action="/">
+			<label hidden for="search">Zoeken</label>
+			<input bind:this={searchInput} id="search-wishes" type="search" name="q" />
+			<button>
+				<figure>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-search"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+						<path d="M21 21l-6 -6" />
+					</svg>
+					<figcaption>zoeken</figcaption>
+				</figure>
+			</button>
+		</form>
+	</article>
+
+	<section class="wishes">
+		<!-- Alle wensen uit de Hygraph API -->
+		{#each filteredWishes as wish}
 			<article>
 				<img
 					src={wish.image.url}
@@ -40,60 +83,89 @@
 					</svg>
 					Geplaatst op: {wish.date}</time
 				>
-                <div>    
-				<mark>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="icon icon-tabler icon-tabler-tag"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						stroke-width="2"
-						stroke="currentColor"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					>
-						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-						<path d="M7.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-						<path
-							d="M3 6v5.172a2 2 0 0 0 .586 1.414l7.71 7.71a2.41 2.41 0 0 0 3.408 0l5.592 -5.592a2.41 2.41 0 0 0 0 -3.408l-7.71 -7.71a2 2 0 0 0 -1.414 -.586h-5.172a3 3 0 0 0 -3 3z"
-						/>
-					</svg>
-					{wish.label}
-				</mark>
-                <a href="/wens/{wish.id}">
-                    Bekijk deze wens
-                </a>
-                </div>
+				<div>
+					<mark>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-tag"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M7.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+							<path
+								d="M3 6v5.172a2 2 0 0 0 .586 1.414l7.71 7.71a2.41 2.41 0 0 0 3.408 0l5.592 -5.592a2.41 2.41 0 0 0 0 -3.408l-7.71 -7.71a2 2 0 0 0 -1.414 -.586h-5.172a3 3 0 0 0 -3 3z"
+							/>
+						</svg>
+						{wish.label}
+					</mark>
+					<a href="/wens/{wish.id}"> Bekijk deze wens </a>
+				</div>
 			</article>
 		{/each}
-
-        
 	</section>
-    
 </main>
 
 <style>
-    a {
-        text-decoration: unset;
-    }
+	a {
+		text-decoration: unset;
+	}
 
 	main {
 		width: fit-content;
 		height: 100vh;
-        margin: auto;
+		margin: auto;
 		padding: var(--unit-default);
 		background-color: var(--color-accent-75);
 	}
 
 	section {
-        width: fit-content;
+		width: fit-content;
 		display: grid;
 		grid-template-columns: 1;
 		gap: var(--unit-default);
 		margin: auto;
-        margin-bottom: var(--unit-default);
+		margin-bottom: var(--unit-default);
+	}
+
+	.searchbar {
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 0px;
+		margin-bottom: var(--unit-default);
+		height: auto;
+		display: block;
+		padding: 0;
+	}
+
+	.searchbar form {
+		display: flex;
+		flex-direction: row;
+		gap: var(--unit-small);
+		width: 100%;
+		background-color: var(--color-secundary);
+		border-radius: var(--unit-small);
+		padding: var(--unit-small);
+		position: relative;
+	}
+
+	.searchbar input {
+		width: inherit;
+		border-radius: var(--unit-micro);
+		border: unset;
+		padding-left: var(--unit-small);
+	}
+
+	.searchbar figure {
+		display: flex;
+		align-items: center;
+		gap: var(--unit-small);
 	}
 
 	article {
@@ -103,34 +175,34 @@
 		grid-template-rows: 20rem 1fr;
 		padding: var(--unit-default);
 		border-radius: var(--unit-small);
-        background-color: var(--color-secundary);
+		background-color: var(--color-secundary);
 	}
 
-    article div {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+	article div {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
 
-    article a {
-        color: var(--color-primary-50);
-        padding: var(--unit-small) var(--unit-default);
-        transition: var(--animation-default) ease-in-out;
-    }
+	article a {
+		color: var(--color-primary-50);
+		padding: var(--unit-small) var(--unit-default);
+		transition: var(--animation-default) ease-in-out;
+	}
 
-    article a:is(:hover, :focus) {
-        color: var(--color-secundary-pure);
-        background-color: var(--color-blue);
-    }
+	article a:is(:hover, :focus) {
+		color: var(--color-secundary-pure);
+		background-color: var(--color-blue);
+	}
 
 	article img {
 		width: 100%;
 		height: 20rem;
 		object-fit: cover;
-        margin-bottom: var(--unit-default);
-        background-color: var(--color-primary-50);
-        border-radius: var(--unit-micro);
+		margin-bottom: var(--unit-default);
+		background-color: var(--color-primary-50);
+		border-radius: var(--unit-micro);
 	}
 
 	article h2 {
@@ -138,7 +210,7 @@
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
-        margin: var(--unit-default) 0 var(--unit-small);
+		margin: var(--unit-default) 0 var(--unit-small);
 	}
 
 	time {
@@ -156,7 +228,7 @@
 
 	@media (min-width: 64rem) {
 		section {
-            width: fit-content;
+			width: fit-content;
 			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
