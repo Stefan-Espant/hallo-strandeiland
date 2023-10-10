@@ -322,6 +322,7 @@
 		color: white;
 		bottom: 25px;
 		position: absolute;
+		transition: var(--animation-default) ease-in-out;
 	}
 
 	.button:hover {
