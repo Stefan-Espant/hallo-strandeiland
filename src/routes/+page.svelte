@@ -1,23 +1,16 @@
 <script>
-    import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
-    import Reactie from '$lib/components/reacties/reactie.svelte';
-
-    import SearchBar from '$lib/components/searchbar/searchbar.svelte';
-
-    export let data;
-    let searchResults = [];
-
-    function handleSearch(searchQuery) {
-        // Update searchResults met de nieuwe zoekopdracht
-        searchResults = data.wishes.filter(wish => wish.heading.includes(searchQuery));
-    }
-</script>
+	import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
+	import Reactie from '$lib/components/reacties/reactie.svelte';
+	import SearchBar from '$lib/components/searchbar/searchbar.svelte';
+  
+	export let data;
+  </script>
 
 <Navbar />
 
 <!-- Wensen -->
 <main>
-	<SearchBar onSearch={handleSearch} />
+	<SearchBar />
 
 	<section>
 		{#each data.wishes as wish}
@@ -107,7 +100,6 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: 20rem 1fr;
 		padding: var(--unit-default);
-		border: 1px solid var(--color-accent-100);
 		border-radius: var(--unit-small);
         background-color: var(--color-secundary);
 	}
