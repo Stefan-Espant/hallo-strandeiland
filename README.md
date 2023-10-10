@@ -1,3 +1,5 @@
+![Schermafbeelding 2023-10-10 om 14 33 52](https://github.com/Stefan-Espant/hallo-strandeiland/assets/89298385/e6613e0a-6898-4237-ad3d-13577cc94de4)
+
 # 📣 Hallo strandeiland
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 Wum- een overzicht van alle squadleden, de beste tools en het laatste FDND nieuws gemaakt met SvelteKit en Prismic.io.
@@ -18,7 +20,8 @@ Hallo strandeiland is een sociaal platform waar bewoners ideeën en wensen kunne
 <!-- Voeg een link toe naar Github Pages 🌐-->
 Dit project omvat een overzicht van alle wensen van de toekomstige bewoners van Strandeiland.
 
-<img width="1624" alt="Schermafbeelding 2023-10-09 om 14 49 21" src="https://github.com/Stefan-Espant/hallo-strandeiland/assets/89298385/7ee5fe01-cf0f-433b-a326-fab0c35e8ff4">
+![Schermafbeelding 2023-10-10 om 14 33 52](https://github.com/Stefan-Espant/hallo-strandeiland/assets/89298385/fdab987e-a5d1-4633-9b5d-067a37f5aed7)
+
 
 ## Kenmerken
 

@@ -17,74 +17,87 @@
 		<a class="nav-link2" href="/">Personen</a>
 		<a class="nav-link2" href="/">Organisaties</a>
 		<a class="Wensen" href="/">Wensen</a>
+
+        <details>
+            <summary role="button">
+                <div class="dropdown">
+                    <svg
+                        width="40"
+                        height="32"
+                        viewBox="0 0 44 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <rect width="44" height="4" fill="" />
+                        <rect y="14" width="44" height="4" fill="" />
+                        <rect y="28" width="44" height="4" fill="" />
+                    </svg>
+                    
+                </div>
+            </summary>
+            <ul>
+                <li>
+                    <a href="/">
+                        Berichten</a
+                    >
+                </li>
+                <li>
+                    <a href="/">
+                        Activiteiten</a
+                    >
+                </li>
+                <li>
+                    <a href="/">
+                        Over Strandeiland</a
+                    >
+                </li>
+                <li>
+                    <a href="/">
+                        Planning
+                </li>
+                <li>
+                    <a href="/">
+                        Participatieteam
+                </li>
+                <li>
+                    <a href="/">
+                        Personen
+                </li>
+                <li>
+                    <a href="/">
+                        Organisaties
+                </li>
+                <li>
+                    <a href="/">
+                        Wensen
+                </li>
+               
+			</ul>
+            
+
 	</nav>
 
-	<details>
-		<summary>
-			<a class="dropdown" href="/">
-				<figure>
-					<svg
-						width="40"
-						height="32"
-						viewBox="0 0 44 32"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<rect width="44" height="4" fill="" />
-						<rect y="14" width="44" height="4" fill="" />
-						<rect y="28" width="44" height="4" fill="" />
-					</svg>
-					<figcaption>menu</figcaption>
-				</figure>
-			</a>
-		</summary>
-		<ul>
-			<li>
-				<a class="nav-link2" href="/">Berichten</a>
-			</li>
-			<li>
-				<a class="nav-link2" href="/">Activiteiten</a>
-			</li>
-			<li>
-				<a class="nav-link2" href="/">Over Strandeiland</a>
-			</li>
-			<li>
-				<a class="nav-link2" href="/">Planning</a>
-			</li>
-			<li>
-				<a class="nav-link2" href="/">Participatieteam</a>
-			</li>
-			<li>
-				<a class="nav-link2" href="/">Personen</a>
-			</li>
-			<li>
-				<a class="nav-link2" href="/">Organisaties</a>
-			</li>
-			<li>
-				<a class="Wensen" href="/">Wensen</a>
-			</li>
-		</ul>
-	</details>
+	
 </section>
 
 <style>
+
+    /* Image */
+
+    img{
+    max-width: 70px;
+    max-height: 100px;
+}
+
 	/* Mobile nav */
 	.nav-beneden {
 		display: flex;
 		background-color: var(--color-secundary-pure);
-		justify-content: space-evenly;
+		justify-content: space-between;
 		border-bottom-style: solid;
 		border-width: 0.5px;
-	}
-
-	details .dropdown svg {
-		fill: var(--color-primary);
-	}
-
-	@media (min-width: 60rem) {
-		details {
-			display: none;
-		}
+        padding-left: 50px;
+        padding-right: 50px;
 	}
 
 	.nav-boven {
@@ -92,6 +105,7 @@
 		background-color: #333;
 		padding: 20px;
 	}
+    
 	.nav-link1 {
 		padding: 5px;
 		color: var(--color-secundary);
@@ -106,10 +120,12 @@
 		aspect-ratio: 1/1;
 	}
 
+   
 	.nav-link2 {
 		margin-top: 30px;
 		text-decoration: none;
 		color: black;
+        display: none;
 	}
 
 	.nav-link2:hover {
@@ -124,6 +140,7 @@
 		padding: 20px;
 		border-radius: 20px;
 		margin: 10px;
+        display: none;
 	}
 
 	.Wensen:hover {
@@ -131,12 +148,68 @@
 		transition-duration: 1s;
 	}
 
-	@media (max-width: 900px) {
-		.nav-beneden {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr;
-			text-align: center;
-		}
+	@media (min-width: 970px) {
+        .nav-link2{
+            display: block;
+        }
+        .Wensen{
+            display: block;
+        }
+        svg{
+            display: none;
+        }
+        details{
+        display: none;
+        
+    }
 	}
+
+    svg{
+        width: 20px;
+    }
+
+    details .dropdown svg {
+		fill: var(--color-primary);
+	}
+
+    details{
+        margin: 10px;
+        margin-top: 30px;
+        text-align: right;
+    }
+  
+  
+    ul{
+        list-style-type: none;
+        padding-top: 10px;
+    }
+    li{
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    li:hover{
+        transform: scale(1.1);
+        transition-duration: 1s;
+        background-color: yellow;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+	details > summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+
+
+
+
 </style>
