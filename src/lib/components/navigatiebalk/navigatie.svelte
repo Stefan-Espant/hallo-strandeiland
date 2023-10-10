@@ -18,41 +18,61 @@
 		<a class="nav-link2" href="/">Organisaties</a>
 		<a class="Wensen" href="/">Wensen</a>
 
-        <details>   
-		
-			
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-    
-
-    <ul>
-        <li>
-            <a class="nav-link3" href="/">Berichten</a>
-        </li>
-        <li>
-            <a class="nav-link3" href="/">Activiteiten</a>
-        </li>
-        <li>
-            <a class="nav-link3" href="/">Over Strandeiland</a>
-        </li>
-        <li>
-            <a class="nav-link3" href="/">Planning</a>
-        </li>
-        <li>
-            <a class="nav-link3" href="/">Participatieteam</a>
-        </li>
-        <li>
-            <a class="nav-link3" href="/">Personen</a>
-        </li>
-        <li>
-            <a class="nav-link3" href="/">Organisaties</a>
-        </li>
-        <li>
-            <a class="Wensen1" href="/">Wensen</a>
-        </li>
-    </ul>
-</details>
-		
-			
+        <details>
+            <summary role="button">
+                <div class="dropdown">
+                    <svg
+                        width="40"
+                        height="32"
+                        viewBox="0 0 44 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <rect width="44" height="4" fill="" />
+                        <rect y="14" width="44" height="4" fill="" />
+                        <rect y="28" width="44" height="4" fill="" />
+                    </svg>
+                    
+                </div>
+            </summary>
+            <ul>
+                <li>
+                    <a href="/">
+                        Berichten</a
+                    >
+                </li>
+                <li>
+                    <a href="/">
+                        Activiteiten</a
+                    >
+                </li>
+                <li>
+                    <a href="/">
+                        Over Strandeiland</a
+                    >
+                </li>
+                <li>
+                    <a href="/">
+                        Planning
+                </li>
+                <li>
+                    <a href="/">
+                        Participatieteam
+                </li>
+                <li>
+                    <a href="/">
+                        Personen
+                </li>
+                <li>
+                    <a href="/">
+                        Organisaties
+                </li>
+                <li>
+                    <a href="/">
+                        Wensen
+                </li>
+               
+			</ul>
             
 
 	</nav>
@@ -61,6 +81,14 @@
 </section>
 
 <style>
+
+    /* Image */
+
+    img{
+    max-width: 70px;
+    max-height: 100px;
+}
+
 	/* Mobile nav */
 	.nav-beneden {
 		display: flex;
@@ -70,13 +98,12 @@
 		border-width: 0.5px;
 	}
 
-	
-
 	.nav-boven {
 		text-align: right;
 		background-color: #333;
 		padding: 20px;
 	}
+    
 	.nav-link1 {
 		padding: 5px;
 		color: var(--color-secundary);
@@ -147,5 +174,39 @@
         margin: 10px;
         margin-top: 30px;
     }
-	
+  
+  
+    ul{
+        list-style-type: none;
+        padding-top: 10px;
+    }
+    li{
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    li:hover{
+        transform: scale(1.1);
+        transition-duration: 1s;
+        background-color: yellow;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+	details > summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+
+
+
+
 </style>
