@@ -21,6 +21,35 @@
 <Navbar />
 
 <main>
+	<!-- De zoekbalk voor het zoeken naar wensen -->
+	<article class="searchbar">
+		<form method="get" action="/">
+			<label hidden for="search">Zoeken</label>
+			<input bind:this={searchInput} id="search-wishes" type="search" name="q" />
+			<button>
+				<figure>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-search"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+						<path d="M21 21l-6 -6" />
+					</svg>
+					<figcaption>zoeken</figcaption>
+				</figure>
+			</button>
+		</form>
+	</article>
+
 	<section>
 		<!-- Alle wensen uit de Hygraph API  -->
 		{#each filteredWishes as wish}
@@ -66,6 +95,96 @@
 		{/each}
 	</section>
 </main>
+
+<!-- !!!! Stefan overzichtspagina !!!! -->
+
+<!-- <main> -->
+<!-- De zoekbalk voor het zoeken naar wensen
+	<article class="searchbar">
+		<form method="get" action="/">
+			<label hidden for="search">Zoeken</label>
+			<input bind:this={searchInput} id="search-wishes" type="search" name="q" />
+			<button>
+				<figure>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-search"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+						<path d="M21 21l-6 -6" />
+					</svg>
+					<figcaption>zoeken</figcaption>
+				</figure>
+			</button>
+		</form>
+	</article>
+
+	<section class="wishes">
+		Alle wensen uit de Hygraph API -->
+<!-- {#each filteredWishes as wish}
+			<article>
+				<img
+					src={wish.image.url}
+					alt="foto van {wish.heading}"
+					width={wish.image.width}
+					height={wish.image.height}
+				/>
+				<h2>{wish.heading}</h2>
+				<time>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-flag-2"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M5 14h14v-9h-14v16" />
+					</svg>
+					Geplaatst op: {wish.date}</time
+				>
+				<div>
+					<mark>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-tabler icon-tabler-tag"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							stroke-width="2"
+							stroke="currentColor"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M7.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+							<path
+								d="M3 6v5.172a2 2 0 0 0 .586 1.414l7.71 7.71a2.41 2.41 0 0 0 3.408 0l5.592 -5.592a2.41 2.41 0 0 0 0 -3.408l-7.71 -7.71a2 2 0 0 0 -1.414 -.586h-5.172a3 3 0 0 0 -3 3z"
+							/>
+						</svg>
+						{wish.label}
+					</mark>
+					<a href="/wens/{wish.id}"> Bekijk deze wens </a>
+				</div>
+			</article>
+		{/each}
+	</section>
+</main> -->
 
 <style>
 	main {
@@ -312,93 +431,3 @@
 		margin-bottom: var(--unit-default);
 	} */
 </style>
-
-<!-- !!!! Stefan overzichtspagina !!!! -->
-
-<!-- <main> -->
-<!-- De zoekbalk voor het zoeken naar wensen
-	<article class="searchbar">
-		<form method="get" action="/">
-			<label hidden for="search">Zoeken</label>
-			<input bind:this={searchInput} id="search-wishes" type="search" name="q" />
-			<button>
-				<figure>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="icon icon-tabler icon-tabler-search"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						stroke-width="2"
-						stroke="currentColor"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					>
-						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-						<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-						<path d="M21 21l-6 -6" />
-					</svg>
-					<figcaption>zoeken</figcaption>
-				</figure>
-			</button>
-		</form>
-	</article>
-
-	<section class="wishes">
-		Alle wensen uit de Hygraph API -->
-<!-- {#each filteredWishes as wish}
-			<article>
-				<img
-					src={wish.image.url}
-					alt="foto van {wish.heading}"
-					width={wish.image.width}
-					height={wish.image.height}
-				/>
-				<h2>{wish.heading}</h2>
-				<time>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						class="icon icon-tabler icon-tabler-flag-2"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						stroke-width="2"
-						stroke="currentColor"
-						fill="none"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					>
-						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-						<path d="M5 14h14v-9h-14v16" />
-					</svg>
-					Geplaatst op: {wish.date}</time
-				>
-				<div>
-					<mark>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="icon icon-tabler icon-tabler-tag"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							stroke-width="2"
-							stroke="currentColor"
-							fill="none"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						>
-							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-							<path d="M7.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-							<path
-								d="M3 6v5.172a2 2 0 0 0 .586 1.414l7.71 7.71a2.41 2.41 0 0 0 3.408 0l5.592 -5.592a2.41 2.41 0 0 0 0 -3.408l-7.71 -7.71a2 2 0 0 0 -1.414 -.586h-5.172a3 3 0 0 0 -3 3z"
-							/>
-						</svg>
-						{wish.label}
-					</mark>
-					<a href="/wens/{wish.id}"> Bekijk deze wens </a>
-				</div>
-			</article>
-		{/each}
-	</section>
-</main> -->
