@@ -32,7 +32,7 @@
           </svg>
           Geplaatst op: {data.wish.date}</time
         >
-        <p>{data.wish.discription}</p>
+        <p>{data.wish.description}</p>
       </section>
       <mark>{data.wish.label}</mark>
     {:else}

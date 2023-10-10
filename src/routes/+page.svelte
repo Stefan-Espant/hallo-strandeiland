@@ -1,17 +1,23 @@
 <script>
     import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
     import Reactie from '$lib/components/reacties/reactie.svelte';
-    import Searchbar from '$lib/components/searchbar/searchbar.svelte';
 
-	export let data;
-	console.log(data);
+    import SearchBar from '$lib/components/searchbar/searchbar.svelte';
+
+    export let data;
+    let searchResults = [];
+
+    function handleSearch(searchQuery) {
+        // Update searchResults met de nieuwe zoekopdracht
+        searchResults = data.wishes.filter(wish => wish.heading.includes(searchQuery));
+    }
 </script>
 
 <Navbar />
 
 <!-- Wensen -->
 <main>
-	<Searchbar />
+	<SearchBar onSearch={handleSearch} />
 
 	<section>
 		{#each data.wishes as wish}
@@ -70,8 +76,6 @@
 			</article>
 		{/each}
 	</section>
-
-    <Reactie />
     
 </main>
 
