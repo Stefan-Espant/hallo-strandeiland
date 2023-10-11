@@ -49,9 +49,9 @@
 			Geplaatst op: {data.wish.date}</time
 		>
 		<p>{data.wish.description}</p>
-	</section>
+		<Rollen />
 
-	<Rollen />
+	</section>
 
 	<Reactie />
 </main>
@@ -64,7 +64,7 @@
 	}
 
 	section {
-		width: 35rem;
+		max-width: 38rem;
 		display: flex;
 		flex-flow: column wrap;
 		margin-left: 20%;
@@ -73,6 +73,7 @@
 
 	mark {
 		padding: 0em 0em 2em 3em;
+		border: none;
 		margin-bottom: var(--unit-default);
 	}
 
@@ -81,6 +82,7 @@
 		align-items: center;
 		gap: var(--unit-small);
 		margin-bottom: var(--unit-default);
+		padding: 1em 0em 1em 2em;
 	}
 
 	section img {
@@ -115,5 +117,8 @@
 
 	main > span {
 		font-size: 14px;
+	}
+	#rollen{
+		margin-left: 18%;
 	}
 </style>
