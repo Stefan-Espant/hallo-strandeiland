@@ -2,10 +2,10 @@
 	import Navbar from '$lib/components/navigatiebalk/navigatie.svelte';
 	import Reactie from '$lib/components/reacties/reactie.svelte';
 	import Rollen from '$lib/components/detailpagina/rollen.svelte';
+	import Status from '$lib/components/status/[id]/+page.svelte';
 
 	export let data;
 
-	console.log(data);
 </script>
 
 <Navbar />
@@ -50,9 +50,9 @@
 		>
 		<p>{data.wish.description}</p>
 		<Rollen />
-
+		<Status />
+	
 	</section>
-
 	<Reactie />
 </main>
 
