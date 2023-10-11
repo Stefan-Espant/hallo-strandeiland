@@ -65,10 +65,7 @@
 					<div class="card_image_body">
 						<h3>Beschrijving:</h3>
 						<p class="card_description">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-							has been the industry's standard dummy text ever since the 1500s, when an unknown
-							printer took a galley of type and scrambled it to make a type specimen book. It has
-							survived not only five centuries, but also the leap into electronic t
+							{wish.description}
 						</p>
 					</div>
 				</div>
@@ -388,6 +385,7 @@
 		padding: var(--unit-default);
 		border-radius: var(--unit-small);
 		background-color: var(--color-secundary);
+		animation: fade-in var(--animation-default) ease-in-out;
 	}
 
 	article div {
@@ -430,5 +428,30 @@
 		align-items: center;
 		gap: var(--unit-small);
 		margin-bottom: var(--unit-default);
-	} */
+	}
+
+	@media (min-width: 42rem) {
+		section {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 64rem) {
+		section {
+			width: fit-content;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+	 */
+
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+			transform: translateY(var(--unit-default)); /* Optioneel: voeg een lichte verticale verschuiving toe */
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
 </style>
