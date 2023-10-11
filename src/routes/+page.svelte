@@ -362,6 +362,15 @@
 		gap: var(--unit-small);
 	}
 
+	.searchbar button svg {
+		fill: var(--color-accent-75);
+		transition: var(--animation-default);
+	}
+
+	.searchbar button:is(:hover, :focus) svg {
+		fill: var(--color-blue);
+	}
+
 	@media (min-width: 42rem) {
 		section {
 			grid-template-columns: 1fr 1fr;
