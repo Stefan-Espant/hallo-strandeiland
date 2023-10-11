@@ -19,7 +19,7 @@ Hallo strandeiland is een sociaal platform waar bewoners ideeën en wensen kunne
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
-Ook hadden we een debriefing geschreven om de opdracht duidelijk in kaart te brengen wat er van ons verwacht word.
+Vooraf hadden we een debriefing geschreven om de opdracht duidelijk in kaart te brengen wat er van ons verwacht word.
 
 ```
 Crossmarx
