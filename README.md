@@ -99,6 +99,7 @@ Voor dit project is gebruikgemaakt van:
 3. Gebruik ```npm install``` om de benodigde packages te downloaden voor dit project.
 4. Voor het gebruik van Hygraph om data in te laden gebruik dan het commando ```npm graphql-request``` om requesten te fetchen.
 5. Start een server met ```npm dev start```.
+6. Voor dit project is gebruik gemaakt van een .env bestand om data op te kunnen halen uit Hygraph
 
 ## Gebruik
 Dit platform is bedoelt om wensen op te halen van bewoners.
