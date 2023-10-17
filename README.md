@@ -18,7 +18,7 @@ Hallo strandeiland is een sociaal platform waar bewoners ideeën en wensen kunne
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
-Dit project omvat een overzicht van alle wensen van de toekomstige bewoners van Strandeiland. De gemeente wilt hiermee radicale transparantie creëren om bewoners op de hoogte te houden van diverse ontwikkelingen en hiermee laten zien dat zij luisteren naar de wensen van de bewoners
+Dit project omvat een overzicht van alle wensen van de toekomstige bewoners van Strandeiland. De gemeente wilt hiermee radicale transparantie creëren om bewoners op de hoogte te houden van diverse ontwikkelingen en hiermee laten zien dat zij luisteren naar de wensen van de bewoners.
 
 ![Schermafbeelding 2023-10-10 om 14 33 52](https://github.com/Stefan-Espant/hallo-strandeiland/assets/89298385/fdab987e-a5d1-4633-9b5d-067a37f5aed7)
 
