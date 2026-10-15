@@ -10,7 +10,7 @@
     "format": "prettier --plugin-search-dir . --write ."
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/adapter-vercel": "^3.1.0",
     "@sveltejs/kit": "^1.20.4",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
@@ -30,5 +30,8 @@
   "license": "ISC",
   "dependencies": {
     "graphql-request": "^6.1.0"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }
